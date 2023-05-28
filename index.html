@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="functions.js"></script>
+  </head>
+  <body> 
+    <div class="container" onclick="getCoords(event)">
+      <div id="top-half">
+        <div id="infinite-header">
+          <span class ="top-half-text-1">
+            * DOWN HERE IS A DESTINATION RAMDOMIZER AND A CHECKLIST TO KEEP TRACK OF THOSE DESTINATION *
+          </span >
+          <span class ="top-half-text-2">
+            * DOWN HERE IS A DESTINATION RAMDOMIZER AND A CHECKLIST TO KEEP TRACK OF THOSE DESTINATION *
+          </span >
+        </div>
+
+
+        <p id="top-half-text-2">* MAYBE ALSO CLICK AROUND THE SCREEN FOR THE BEE TO FLY A LITTLE, HE WOULD APPRECIATE IT *</p>
+      </div>
+
+      <div id="bottom-half"></div>
+      <img id="gumball" src="images/gumball-machine.GIF" alt="" width="621" height="889" />
+
+      <img id="coins-img" src="images/coins.PNG" alt="" width="556" height="796" />
+      <p id="coins-text">Please remember to feed the machine as nothing is free, <br> ever.</p>
+      <div id="coins-btn" onclick="pickCoin()"></div>
+
+      <img id="bee" src="images/bee.gif" alt="" width="125" height="95" />
+
+      <img id="checklist-img" src="images/checklist.png" alt="" width="222" height="175" onclick="popUpChecklist()"/>
+      <p id="checklist-text">Get your checklist here</p>
+
+      <div id="coin-popup">
+        <img id="big-coin" src="images/big-coin.GIF" alt="" onclick="runMachine()">
+      </div> 
+
+      <div id="place-popup">
+        <img id="ball" alt="" width="55" height="55" onclick="popUpPlaceInfo()">
+      </div>
+
+      <div id="checklist">
+        <h2>CHECKLIST</h2>
+        <div class="checklist-item">
+          <input type="checkbox" id="place1" name="place1" value="Eureka">
+          <label for="place1"> EUREKA TOWEL MELBOURNE</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="place2" name="place2" value="Luna">
+          <label for="place2"> LUNA PARK</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="place3" name="place3" value="Sanctuary">
+          <label for="place3"> HEALESVILLE SANCTUARY</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="place4" name="place4" value="Cu-Chi">
+          <label for="place4"> CU CHI TUNNEL</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="place5" name="place5" value="Ben-Thanh">
+          <label for="place5"> BEN THANH MARKET</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="place6" name="place6" value="Independence-Palace">
+           <label for="place6"> INDEPENDENCE PALACE</label>
+        </div>
+
+        <button onclick="closeChecklistPopup()">X</button>   
+      </div>
+    </div>
+  </body>
+</html>
